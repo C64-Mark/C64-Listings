@@ -6,9 +6,9 @@
 55 y1=100+sqr(160*x-x*x)
 56 y2=100-sqr(160*x-x*x)
 60 for y=y1 to y2 step y1-y2
-70 ch=int(x/()
-80 ro=int(y/x)
-85 ln y and 7
+70 ch=int(x/8)
+80 ro=int(y/8)
+85 ln=y and 7
 90 by=base+ro*320+8*ch+ln
 100 bi=7-(x and 7)
 110 poke by,peek(by) OR (2^bi)
