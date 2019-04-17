@@ -5,5 +5,5 @@
 140 c=13*4096+8*256:rem set c to point to color memory
 150 print chr$(147)"aaaaaaaaaa"
 160 for l=0 to 9
-170 poke c+l,8:rem use multi balck
+170 poke c+l,8:rem use multi black
 180 next
