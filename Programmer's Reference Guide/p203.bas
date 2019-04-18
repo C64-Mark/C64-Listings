@@ -10,7 +10,7 @@
 100 poke s+4,65
 110 for t=1 to dr*2
 120 fq=fr+peek(s+27)/2
-130 hf=int(fq/256):lf=lq and 255
+130 hf=int(fq/256):lf=fq and 255
 140 poke s+0,lf:poke s+1,hf
 150 next
 160 poke s+4,64
@@ -20,5 +20,5 @@
 520 data 5407,4,8583,12,9634,2
 530 data 10207,2,10814,2,8583,2
 540 data 9634,4,10814,2,8583,2
-550 data 8583,12
+550 data 9634,4,8583,12
 560 data 0,0
