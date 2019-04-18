@@ -1,7 +1,7 @@
 5 s=54272
-10 for l=s to s+24:poke l,0:next
+10 for l=s to s+24:poke l,0:next:rem clear sound chip
 20 poke s+5,9:poke s+6,0
-30 poke s+24,15
+30 poke s+24,15:rem set volume to maximum
 40 read hf,lf,dr
 50 if hf<0 then end
 60 poke s+1,hf:poke s,lf
