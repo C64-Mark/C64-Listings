@@ -6,8 +6,8 @@
 
 *=$1400
 
-    lda #$01
-    sta $0400
-    lda #$0E
-    sta $d800
-    jmp $1400
+        lda #$01
+        sta $0400
+        lda #$0E
+        sta $d800
+        jmp $1400
