@@ -1,4 +1,5 @@
 15 z$="{home}{down*12}":poke 650,128
+20 let lt=999999
 30 let hs=0
 40 let s=0
 50 let po=205
@@ -32,7 +33,9 @@
 330 poke 53280,254:poke 53281,246:print"{down}       ";s;"paratroopers"
 340 if s=10 then print "{down}        in";t;" seconds"
 350 if s>hs then let hs=s
+360 if t<lt and s=10 then let lt=t
 370 print"{down}        high score=";hs
+380 print"{down}        low time=";lt;" seconds"
 390 for f=1 to 1000:next f
 410 print"{down}        another go? (y/n)";
 420 get k$:if k$="" then goto 420
