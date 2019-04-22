@@ -1,3 +1,4 @@
+5 ***requires simons' basic***
 10 hires 1,0
 20 for x=0 to 100:for y=0 to 100
 30 plot x,y,1
