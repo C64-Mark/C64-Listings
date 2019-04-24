@@ -1,0 +1,6 @@
+100 LET A$= "32 KG"
+110 LET B$="110 KG"
+120 PRINT "A$+B$="; A$+ B$
+130 PRINT "VAL(A$) +VAL(B$) = ";
+VAL(A$) + VAL(B$)
+140 END 
