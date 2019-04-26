@@ -1,3 +1,3 @@
 Input Magazine - C64 Listings
 
-Issues 1 to 52
+Volume 1: Issues 1 to 13
