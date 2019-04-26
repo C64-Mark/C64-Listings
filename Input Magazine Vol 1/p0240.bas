@@ -1,4 +1,4 @@
-10 INPUT "ADDRESS. ..";A
-20 LET N = PEEK(A)
-30 PRINT "CONTENTS. .";N
-40 GOTO 10 
+10 input"address...";a
+20 let n=peek(a)
+30 print"contents..";n
+40 goto 10
