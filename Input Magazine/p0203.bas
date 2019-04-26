@@ -1,29 +1,22 @@
-10 PRINT "0"
-20 PRINT "ANAGRAM PROGRAM"
-30 PRINT "ENTER WORD TO BE
-SCRAMBLED"
-50 INPUT "> M";W$
-55 WO$=W$
-70 PRINT "Do"
-80 FOR N = LEN(W$) TO 1 STEP —1
-90 M= INT(RND(1)*N)+ 1
-100 A$= A$ + M1D$(W$,M,1)
-110 W$= LEFT$(W$,M + R1GHT$
-(W$,LEN(W$) — M)
-120 NEXT N
-130 PRINT "THE ANAGRAM 1S ❑ ";A$
-140 PRINT "WHAT DO YOU THINK
-THE WORD IS?"
-160 INPUT GUESS$
-170 G=G+1
-180 IF GUESS$ < > WO$ THEN PRINT
-"WRONG, TRY AGAIN":GOTO 160
-190 PRINT "WELL DONE"
-195 IF G=1 THEN PRINT "YOU TOOK
-1 TRY": GOTO 210
-200 PRINT "YOU TOOK";G;"TRIES"
-210 PRINT "DO YOU WANT ANOTHER
-GO. (Y/N)?"
-220 GET A$:1F A$< >"Y" AND A$< >
-"N" THEN 220
-230 IF A$="Y" THEN RUN
+10 print"{clear}"
+20 print"anagram program"
+30 print"enter word to be scrambled"
+50 input">{blue}";w$
+55 wo$=w$
+70 print"{clear}{light blue}"
+80 for n=len(w$) to 1 step-1
+90 m=int(rnd(1)*n)+1
+100 a$=a$+mid$(w$,m,1)
+110 w$=left$(w$,m-1)+right$(w$,len(w$)-m)
+120 next n
+130 print"the anagram is ";a$
+140 print"what do you think the word is?"
+160 input guess$
+170 g=g+1
+180 if guess$<>wo$ then print"wrong, try again":goto 160
+190 print"well done"
+195 if g=1 then print"you took 1 try":goto 210
+200 print"you took";g;"tries"
+210 print"do you want another go. (y/n)?"
+220 get a$:if a$<>"y" and a$<> "n" then 220
+230 if a$="y" then run
