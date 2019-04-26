@@ -1,14 +1,8 @@
-10 PRINT "oggi DO YOU WANT TO
-CONVERT DEGREES INTO"
-20 PRINT "RADIANS(1) OR RADIANS
-INTO DEGREES(2)":INPUT A
-30 IF A<1 OR A>2 THEN 10
-40 INPUT "L] WHAT IS YOUR NUMBER";
-B:PRINT "A gg gl THAT IS";
-50 IF A=1 THEN PRINT B/180*n;
-"RADIANS"
-60 IF A=2 THEN PRINT 13 . 180/n;
-"DEGREES"
-70 PRINT "L gg ggPRESS ANY KEY TO GO
-AGAIN"
-80 POKE 198,0:WAIT 198,1:RUN 
+10 print "{clear}{yellow}do you want to convert degrees into"
+20 print "radians(1) or radians into degrees(2)":input a
+30 if a<1 or a>2 then 10
+40 input "{clear}{cyan}what is your number";b:print "{white}{down*2}that is";
+50 if a=1 then print b/180*pi;"radians"
+60 if a=2 then print b*180/pi;"degrees"
+70 print "{cyan}{down*2}press any key to go again"
+80 poke 198,0:wait 198,1:run
