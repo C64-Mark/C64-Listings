@@ -1,5 +1,4 @@
-10 FOR N = 2048 TO 2143
-20 PRINT N;TAB(10);PEEK(N); 
-30 IF PEEK(N) > 31 THEN PRINT TAB(20);
-CHR$(PEEK(N)):NEXT N:END
-40 PRINT:NEXT N 
+10 for n=2048 to 2143
+20 print n;tab(10);peek(n); 
+30 if peek(n)>31 then print tab(20);chr$(peek(n)):next n:end
+40 print:next n
