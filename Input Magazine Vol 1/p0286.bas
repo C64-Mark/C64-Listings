@@ -1,12 +1,7 @@
-10 INPUT "AGE"; AGE
-20 INPUT "NUMBER OF 0-LEVELS";
-OLEVELS
-30 OVER18 = (AGE > =18)
-40 QUAL = (OLEVELS > = 5)
-50 IF NOT OVER18 AND NOT QUAL
-THEN PRINT "NOT SUITABLE"
-60 IF(NOT OVER18 AND QUAL) OR(OVER18
-AND NOT QUAL) THEN PRINT"SALARY
-SCALE ONE"
-70 IF OVER18 AND QUAL THEN
-PRINT "SALARY SCALE TWO" 
+10 input"age";age
+20 input"number of o-levels";olevels
+30 over18=(age>=18)
+40 qual=(olevels>=5)
+50 if not over18 and not qual then print"not suitable"
+60 if(not over18 and qual) or (over18 and not qual) then print"salary scale one"
+70 if over18 and qual then print"salary scale two"
