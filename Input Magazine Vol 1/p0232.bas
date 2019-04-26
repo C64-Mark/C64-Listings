@@ -1,8 +1,8 @@
-10 S=54272
-30 POKE S + 1,255
-40 POKE S+ 5,219
-50 POKE S+24,15
-60 POKE S+4,129
-70 FOR Z=1 TO 5000: NEXT Z
-80 POKE 5+4,128
-100 GOTO 30 
+10 s=54272
+30 poke s+1,255
+40 poke s+5,219
+50 poke s+24,15
+60 poke s+4,129
+70 for z=1 to 5000:next z
+80 poke s+4,128
+100 goto 30
