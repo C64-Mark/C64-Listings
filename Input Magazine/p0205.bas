@@ -1,6 +1,5 @@
-100 LET A$= "32 KG"
-110 LET B$="110 KG"
-120 PRINT "A$+B$="; A$+ B$
-130 PRINT "VAL(A$) +VAL(B$) = ";
-VAL(A$) + VAL(B$)
-140 END 
+100 let a$="32 kg"
+110 let b$="110 kg"
+120 print"a$+b$=";a$+b$
+130 print"val(a$)+val(b$) = ";val(a$)+val(b$)
+140 end
