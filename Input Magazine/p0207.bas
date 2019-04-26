@@ -1,13 +1,12 @@
-10 INPUT "ENTER TEXT";T$
-20 INPUT "WORD TO BE REPLACED";W$
-30 INPUT "NEW WORD";NW$
-35 P=0
-40 P=P+1
-50 A$ = MID$(T$,P,LEN(W$))
-60 IF A$< >W$ THEN 90
-70 TS= LEFT$(T$,P —1) + NW$+ R1GHT$
-(T$,LEN(T$) — P— LEN(W$) + 1)
-80 P= P+ LEN(NW$) —1
-90 IF P<LEN(T$) THEN GOTO 40
-100 PRINT T$
-110 GOTO 20 
+10 input"enter text";t$
+20 input"word to be replaced";w$
+30 input"new word";nw$
+35 p=0
+40 p=p+1
+50 a$=mid$(t$,p,len(w$))
+60 if a$<>w$ then 90
+70 t$=left$(t$,p-1)+nw$+right$(t$,len(t$)-p-len(w$)+1)
+80 p=p+len(nw$)-1
+90 if p<len(t$) then goto 40
+100 print t$
+110 goto 20
