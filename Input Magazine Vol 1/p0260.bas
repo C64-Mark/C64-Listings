@@ -1,140 +1,114 @@
-0 BB =53280:GOTO 200
-1 CLR:BB = 53280:FF = 1
-2 POKE BB4 O:POKE BB +1,0
-3 Cl$="gigigiggfiggAggiggigg
-glAg
-4 INPUT "DENIER ❑ NAMED FOR ❑
-GRAPH";N$
-5 INPUT "cj !DENIER El NUMBER 0 OFD
-BARS. (1 —30)";XX
-6 IF XX<1 OR XX>30 THEN 5
-7 DIM A(XX),B(XX),C(XX)
-8 FOR Z=1 TO 30
-9 IF XX'Z>30 THEN X1 =Z-1: GOTO 11
-10 NEXT Z
-11 PRINT "DENIER El DATA:g"
-12 FOR Z=1 TO XX:PRINT "BAR"; Z;:
-INPUT C(Z):NEXT Z
-13 A=0:B=0:C=0:D=0
-14 FOR Z=1 TO XX
-15 IF C(Z) > A THEN A = C(Z)
-16 IF C(Z) <B THEN B=C(Z)
-17 IF C(Z) < 0 THEN B(Z)-=C(Z): A(Z) = 0
-18 IF C(Z) > 0 THEN A(Z) = C(Z): B(Z) =0
-19 NEXT Z
-20 C= A+ ABS(B)
-22 GOTO 200
-24 POKE BB,5:POKE BB +1,0
-25 PRINT "0"N$
-26 FOR Z=2 TO 22
-27 POKE 1033+ Z*40,64:POKE 55305
-+Z*40,6
-28 POKE 1032 + Z*40,45:POKE 55304+
-Z*40,3
-29 NEXT Z
-30 FOR Z=1 TO XX:W= 0:C0=8
-31 IF B(Z) <0 THEN CO=2
-32 FOR ZZ= B/D TO A/D
-33 W=W+1:IF INT(ZZ)<45- 0 THEN 38
-34 FOR G =1 TO X1
-35 POKE (1953— X1) + (Z*X1 + G) —
-W*40,64
-36 POKE (56225— X1) + (Z*X1 + G) —
-W`40,7
-37 NEXT G:GOTO 43
-38 FOR G=1 TO X1:CA= 227:CC= CO: IF G< >1 AND G=X1 THEN CO=1
-39 IF ZZ< 0 THEN CA=228
-40 IF B(Z)/D>ZZ OR A(Z)/D<ZZ THEN 43
-41 POKE((1953 —X1) + Z*X1 + G) —
-W*40,CA:POKE((56225 — X1) + Z*X1+
-G)—W*40,C0
-42 CO = CC:NEXT G
-43 POKE BB,RND(1)*2 + 5
-44 NEXT ZZ,Z:POKE BB,5
-45 PRINT "Iglu gr;LEFT$(Q$,
-20 —ABS(B/D))
-46 FOR Z= 0 TO A STEP D*2: IF C= <10
-AND INT(Z)< >Z THEN PRINT" ❑❑
-❑": GOTO 48
-47 PRINT INT(Z)" ❑ "
-48 NEXT Z
-49 PRINT "§Igg";LEFT$(Q$,20—
-ABS(B/D))
-50 FOR Z=0 TO B STEP — D*2: IF C= <10
-AND INT(Z)< >Z THEN PRINT
-"gr:GOTO 52
-51 PRINT INT(Z)"gr
-52 NEXT Z
-53 POKE 198,0
-54 GET A$:IF A$="" THEN 54
-55 GOTO 200
-100 POKE BB,1:POKE BB +1,1
-103 IF FF=0 THEN 500
-105 PRINT "0 "TAB(10)"BAR ❑
-GRAPH ❑ PLOTTER D"
-110 PRINT "gggr 00 0 t "
-115 FOR Z=d1 TO 15
-120 PRINT "0 ❑ 011":NEXT Z
-125 PRINT" ❑❑❑ AKDL";
-130 FOR Z=1 TO 30
-135 PRINT "—";:NEXT Z
-140 PRINT > "
-145 PRINT "igmgggggfiggpi
-II pill Pi VALUE: —J USERS Li UNITS"
-150 pRINT"mggggggAgggigggggg AgMJpJEJ BARS: ❑ WEEKS/
-MONTHS/YEARS"
-155 PRINT "gg ga a"TAB(9)
-"PRESSE KEY ❑ TODCONTINUE"
-160 POKE 198,0
-165 WAIT 198,1
-170 GOTO 24
-200 POKE BB,6:POKE BB + 1,6
-210 pRINT"oggggggg"TAB
-(15)"pg El ❑ OPTION 011IggA"
-220 PRINT TAB(12)"1 ❑ ENTER ❑ DATA"
-230 PRINT TAB(12)"2 0 SCALED ❑ GRAPH"
-240 PRINT TAB(12)"3 ❑ VIEW/EDIT ❑ DATA"
-245 PRINT TAB(12)"4 ❑ FUL❑ SCREEN ❑
-GRAPH"
-250 PRINT TAB(13)"g a ENTER ❑
-CHOICE ❑ ?"
-260 POKE 198,0
-270 GET A$
-280 ON VAL(A$) GOT0400,700,300, 600
-290 GOTO 270
-300 IF FF=0 THEN 500
-305 POKE BB,7:POKE BB + 1,7
-310 PRINT "0 11"N$" ❑ DATA:"
-315 PRINT," g BAR"," HEIGHTgr
-320 FOR Z=1 TO XX
-325 IF A(Z) < > 0 THEN PRINT,"M"Z,
-"."A(Z):GOTO 335
-330 PRINT,"1"Z,"M"B(Z)
-335 POKE 198,0
-340 GET A$
-345 IF A$="" THEN 340
-350 IF A$ < >CHR$(13) THEN 370
-355 PRINT "0."TAB(18);
-360 INPUT C(Z)
-365 GOTO 13
-370 NEXT Z
-375 GOTO 200
-400 POKE BB,13:POKE BB +1,13
-410 pRINT" ❑ ggggggggII IMPIPJUPRESS ❑ (MEil)
-NTER (M )ENU"
-420 GET A$
-430 IF A$="E" THEN 1
-440 IF A$="M" THEN 200
-450 GOTO 420
-500 PRINT"O "TAB(16)"NO ❑ DATA!"
-510 FOR Z=1 TO 500:NEXT Z
-520 GOTO 200
-600 IF FF=0 THEN 500
-605 IF C< =10 THEN D=.5:GOTO 100
-606 IF C< =20 THEN D=1:GOTO 100
-610 D=C/20:GOTO 100
-700 IF FF=0 THEN 500
-705 IF C< =10 THEN D=1.25:GOTO 100
-706 IF C< =20 THEN D=2.5:GOTO 100
-710 D= C/20+ 9:D= D*.1:D=INT(D)*
-10:GOTO 100
+0 bb=53280:goto 200
+1 clr:bb=53280:ff=1
+2 poke bb,0:poke bb+1,0
+3 q$="{down*25}"
+4 input"{clear}enter name for graph";n$
+5 input"{clear}{yellow}enter number of bars. (1-30)";xx
+6 if xx<1 or xx>30 then 5
+7 dim a(xx),b(xx),c(xx)
+8 for z=1 to 30
+9 if xx*z>30 then x1=z-1:goto 11
+10 next z
+11 print"{clear}enter data:{down}"
+12 for z=1 to xx:print"bar";z;:input c(z):next z
+13 a=0:b=0:c=0:d=0
+14 for z=1 to xx
+15 if c(z)>a then a=c(z)
+16 if c(z)<b then b=c(z)
+17 if c(z)<0 then b(z)=c(z):a(z)=0
+18 if c(z)>0 then a(z)=c(z):b(z)=0
+19 next z
+20 c=a+abs(b)
+22 goto 200
+24 poke bb,5:poke bb+1,0
+25 print"{clear}"n$
+26 for z=2 to 22
+27 poke 1033+z*40,64:poke 55305+z*40,6
+28 poke 1032+z*40,45:poke 55304+z*40,3
+29 next z
+30 for z=1 to xx:w=0:co=8
+31 if b(z)<0 then co=2
+32 for zz=b/d to a/d
+33 w=w+1:if int(zz)<>0 then 38
+34 for g=1 to x1
+35 poke (1953-x1)+(z*x1+g)-w*40,64
+36 poke (56225-x1)+(z*x1+g)-w*40,7
+37 next g:goto 43
+38 for g=1 to x1:ca=227:cc=co:if g<>1 and g=x1 then co=1
+39 if zz<0 then ca=228
+40 if b(z)/d>zz or a(z)/d<zz then 43
+41 poke((1953-x1)+z*x1+g)-w*40,ca:poke((56225-x1)+z*x1+g)-w*40,co
+42 co=cc:next g
+43 poke bb,rnd(1)*2+5
+44 next zz,z:poke bb,5
+45 print"{home}{green}{down}";left$(q$,20-abs(b/d))
+46 for z= 0 to a step d*2:if c=<10 and int(z)<>z then print"{up*3}":goto 48
+47 print int(z)"{up*3}"
+48 next z
+49 print"{home}{down}";left$(q$,20-abs(b/d))
+50 for z=0 to b step -d*2:if c=<10 and int(z)<>z then print"{down}":goto 52
+51 print int(z)"{down}"
+52 next z
+53 poke 198,0
+54 get a$:if a$="" then 54
+55 goto 200
+100 poke bb,1:poke bb+1,1
+103 if ff=0 then 500
+105 print"{clear}{purple}{reverse on}"tab(10)"bar graph plotter "
+110 print"{down*2}   {green}^"
+115 for z=1 to 15
+120 print"   {sh -}":next z
+125 print"   {red}W{cyan}";
+130 for z=1 to 30
+135 print"-";:next z
+140 print">"
+145 print "{home}{red}{down*7}{right*5}value: users units"
+150 print"{blue}{down*10}{right*5}bars: weeks/months/years"
+155 print"{down*3}{purple}{reverse on}"tab(9)"press key to continue"
+160 poke 198,0
+165 wait 198,1
+170 goto 24
+200 poke bb,6:poke bb+1,6
+210 print"{clear}{down*7}"tab(15)"{cyan}{reverse on}  option  {down}{white}"
+220 print tab(12)"1 enter data"
+230 print tab(12)"2 scaled graph"
+240 print tab(12)"3 view/edit data"
+245 print tab(12)"4 full screen graph"
+250 print tab(13)"{down}{cyan}{reverse on}enter choice ?"
+260 poke 198,0
+270 get a$
+280 on val(a$) goto 400,700,300,600
+290 goto 270
+300 if ff=0 then 500
+305 poke bb,7:poke bb+1,7
+310 print"{clear}{purple}"n$" data:"
+315 print,"{down}{red}bar","{blue}height{down}"
+320 for z=1 to xx
+325 if a(z)<>0 then print,"{blue}"z,"{red}"a(z):goto 335
+330 print,"{red}"z,"{blue}"b(z)
+335 poke 198,0
+340 get a$
+345 if a$="" then 340
+350 if a$<>chr$(13) then 370
+355 print "{up}{black}"tab(18);
+360 input c(z)
+365 goto 13
+370 next z
+375 goto 200
+400 poke bb,13:poke bb+1,13
+410 print"{clear}{down*8}{right*6}{green}press ({blue}e{green})nter data , ({blue}m{green})enu"
+420 get a$
+430 if a$="e" then 1
+440 if a$="m" then 200
+450 goto 420
+500 print"{clear}{black}"tab(16)"no data!"
+510 for z=1 to 500:next z
+520 goto 200
+600 if ff=0 then 500
+605 if c<=10 then d=.5:goto 100
+606 if c<=20 then d=1:goto 100
+610 d=c/20:goto 100
+700 if ff=0 then 500
+705 if c<=10 then d=1.25:goto 100
+706 if c<=20 then d=2.5:goto 100
+710 d=c/20+9:d=d*.1:d=int(d)*10:goto 100
