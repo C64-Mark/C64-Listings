@@ -1,59 +1,36 @@
-50 POKE53280,6:1NPUT" p INPUT LEVEL
-(1 —4) 61";A:IFA <10RA >4THEN50
-60 LE = 5 — A:LE= LE*4 +4
-100 PRINT"IDggrA=1186:POKE
-650,255
-105 FORZ = 0T039:POKE1104 + Z,102: POKE
-1984 + Z,102: P0KE55376 + Z,1: POKE
-56256 +Z,1:NEXT
-110 A(0) = —1:A(1) = — 40:A(2) = +1:A(3)
-=40:FOR F=1 TO 21
-150 PRINT"AZIE ❑❑❑❑❑❑❑❑❑❑❑❑❑❑❑❑❑❑❑❑❑❑
-❑ mi E";:NEXT F:POKEA,4
-220 J = INT(RND(1)*4):G =J:P0KE54272+ A,7
-230 B = A+ A(J)*2:IFPEEK(B)=160THEN
-POKEB,J:POKE54272 +A,6:POKE
-A + A(J),32:A = B:GOT0220
-240 J = (J +1)* — (J <3):IFJ < > GTHEN230
-250 J = PEEK(A):POKEA,32:IFJ <4THEN
-A = A— A(J)*2:GOTO 220
-1000 LV=3:FORZ=1T060:X=INT(RND(1)*
-40+ 1) + INT(RND(1)*9)*80
-1002 IFPEEK(1184+ X) =160ANDPEEK
-(1224 + X) = 160THENPOKE1184 + X,32
-1004 NEXT Z
-1006 X= RND(1)*720:IFPEEK(1223+ X) < >
-32THEN1006 
-1008 OL= 1223 + X:POKEOL,42
-1010 T1$ = "000000":POKEA,94:J =3
-1013 PRINT"§";:FORZ =1T062:PRINT
-" ❑ ";:NEXT: PRINT" HIGH
-SCORE: AI"HS
-1014 PRINT- PI LV:M"LV" E E
-"Tr CI E ❑ E
-ISCORE:M"SC
-1015 IF VAL (T1$) > = LE THEN 2000
-1016 GETZ$:1FZ$=""THEN1014
-1017 IF Z$ = "Z"THENJ = 0
-1018 IF Z$ = "X"THENJ =2
-1019 IF Z$ = "P"THENJ =1
-1020 IF Z$ = "L"THENJ =3
-1021 B = A + A(J):IFPEEK(B) < >102 AND
-PEEK(B) < >160 THEN 1040
-1030 GOTO 1014
-1040 IFPEEK(B) = 42THEN3000
-1050 POKEB,94:POKEA,32:A = B:GOTO 1014
-2000 LV= LV-1:FORZ=155TOOSTEP —1:
-POKEA,RND(1)*6 + 109
-2003 NEXT:POKEA,94:IFLV> OTHEN1010
-2005 PRINT"@E ❑ ❑ M ❑ — ❑
-NEW MAZE ❑❑❑❑❑❑❑H❑❑❑❑
-HIJIHIPAIIIPJPJPJPJH
-PJCIDEg F7 E 11; —11111ISTART"
-2006 SC= 0:LV= 3:GETK$:1FK$ = " ri"
-THEN50
-2007 1FK$ ="E"THEN1010
-2010 G0T02006
-3000 SC= SC + 50 — VAL(T3):POKEOL32:
-IFSC> HSTHENHS = SC
-3010 GOT01006 
+50 poke 53280,6:input"{clear}{cyan}input level (1-4){green}";a:if a<1 or a>4 then 50
+60 le=5-a:le=le*4+4
+100 print"{clear}{down*2}":a=1186:poke 650,255
+105 for z=0 to 39:poke 1104+z,102:poke 1984+z,102:poke 55376+z,1:poke 56256+z,1:next
+110 a(0)=-1:a(1)=-40:a(2)=+1:a(3)=40:for f=1 to 21
+150 print"{white}{cm +}{reverse on}{yellow}                                      {reverse off}{white}{cm +}";:next f:poke a,4
+220 j=int(rnd(1)*4):g=j:poke 54272+a,7
+230 b=a+a(j)*2:if peek(b)=160 then poke b,j:poke 54272+a,6:poke a+a(j),32:a=b:goto 220
+240 j=(j+1)*-(j<3):if j<>g then 230
+250 j=peek(a):poke a,32:if j<4 then a=a-a(j)*2:goto 220
+1000 lv=3:for z=1 to 60:x=int(rnd(1)*40+1)+int(rnd(1)*9)*80
+1002 if peek(1184+x)=160 and peek (1224+x)=160 then poke 1184+x,32
+1004 next z
+1006 x=rnd(1)*720:if peek(1223+x)<>32 then 1006 
+1008 ol=1223+x:poke ol,42
+1010 ti$="000000":poke a,94:j=3
+1013 print"{home}";:for z=1 to 62:print" ";:next: print"{purple}high score:{white}"hs
+1014 print"{home}{purple}lv:{white}"lv"    {purple}time:{white}"ti$"      {purple}score:{white}"sc
+1015 if val(ti$)>=le then 2000
+1016 get z$:if z$="" then 1014
+1017 if z$="z" then j=0
+1018 if z$="x" then j=2
+1019 if z$="p" then j=1
+1020 if z$="l" then j=3
+1021 b=a+a(j):if peek(b)<>102 and peek(b)<>160 then 1040
+1030 goto 1014
+1040 if peek(b)=42 then 3000
+1050 poke b,94:poke a,32:a=b:goto 1014
+2000 lv=lv-1:for z=155 to 0 step-1:poke a,rnd(1)*6+109
+2003 next:poke a,94:if lv>0 then 1010
+2005 print"{home}   {white}f1 {cyan}- new maze           {right*13}   {white}f7 {cyan}- start"
+2006 sc=0:lv=3:get k$:if k$="{f1}" then 50
+2007 if k$="{f7}" then 1010
+2010 goto 2006
+3000 sc=sc+50-val(ti$):poke ol,32:if sc>hs then hs=sc
+3010 goto 1006
