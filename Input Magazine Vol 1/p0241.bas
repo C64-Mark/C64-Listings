@@ -1,6 +1,6 @@
-10 PRINT "CONTENTS ... ";PEEK(30000)
-20 INPUT "NUMBER ";N
-30 POKE 30000,N
-40 PRINT "NEW CONTENTS";PEEK(30000)
-45 PRINT
-50 GOTO 20 
+10 print"contents ... ";peek(30000)
+20 input"number ";n
+30 poke 30000,n
+40 print"new contents";peek(30000)
+45 print
+50 goto 20
