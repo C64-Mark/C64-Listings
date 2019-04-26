@@ -1,22 +1,18 @@
-10 G =1:0N INT(RND(1)1) +1 GOTO 20,
-30,40,50,60,70
-20 B$ = "APPLE":GOTO 80
-30 B$ = "ORANGE":GOTO 80
-40 B$ = "BANANA":GOTO 80
-50 B$ = "LEMON":GOTO 80
-60 B$ = "PASSION FRUIT":GOTO 80
-70 B$ = "PINEAPPLE"
-80 PRINT "01 AM A FRUIT, WHAT
-FRUIT AM I?"
-90 INPUT A$
-100 IF A$ = B$ THEN GOTO 155
-110 G=G+1
-120 PRINT "WRONG!"
-130 FOR J =1 TO 2000
-140 NEXT J
-150 GOTO 90
-155 IF G=1 THEN PRINT "YOU WERE
-RIGHT IN 1 GUESS":END
-160 PRINT "YOU WERE RIGHT IN";G;
-"GUESSES"
-170 END 
+10 g=1:on int(rnd(1)*6)+1 goto 20,30,40,50,60,70
+20 b$="apple":goto 80
+30 b$="orange":goto 80
+40 b$="banana":goto 80
+50 b$="lemon":goto 80
+60 b$="passion fruit":goto 80
+70 b$="pineapple"
+80 print "{clear}i am a fruit, what fruit am i?"
+90 input a$
+100 if a$=b$ then goto 155
+110 g=g+1
+120 print"wrong!"
+130 for j=1 to 2000
+140 next j
+150 goto 90
+155 if g=1 then print "you were right in 1 guess":end
+160 print "you were right in";g;"guesses"
+170 end
