@@ -8,10 +8,3 @@ Changes made to assembly version:
 
 None. This is a straight translation based heavily on the conversion done by @OldSkoolCoder (John Dale)
 
-Files included:
-
-Original BASIC listing from the book
-Original T64 of the BASIC version
-PRG file of the assembly version
-ASM files used in the remake
-CBM PRG Studio file containing BASIC and ASM files
