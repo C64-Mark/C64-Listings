@@ -1,6 +1,6 @@
 ;Common Libraries
 
-;*** FILL $1000 BYTES WITH A VALUE ***
+;*** FILL 1024 BYTES WITH A VALUE ***
 defm FILL_1000 ; start, value
 
         lda /2
