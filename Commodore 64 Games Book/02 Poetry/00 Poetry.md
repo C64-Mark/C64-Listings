@@ -10,9 +10,3 @@ Modifications made to assembly version:
 2. Some minor spelling corrections :D
 3. A line is left between each line of poetry - mostly so I didn't have to deal with lines that wrapped over two lines
 
-Files included:
-Original BASIC file from the book
-T64 file of the original game
-ASM files for the assembly version
-CMB PRG Studio file containing BASIC and ASM files
-PRG of the assembly version of the game
