@@ -8,4 +8,4 @@ Modifications in the assembly version:
 
 1. Changed the title bar to pad out the score and add the word 'lives'. Colours added to this line as appropriate
 2. Shifted the position of the sprites within their frames to aid calculation of collision
-3. Hardware sprite collision isn't used. Instead the X/Y positions of the turkey and waiter are use to detect a collision
+3. Hardware sprite collision isn't used. Instead the X/Y positions of the turkey and waiter are used to detect a collision
