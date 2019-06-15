@@ -11,6 +11,6 @@ xC              byte    $00
 yA              byte    $00
 yB              byte    $00
 pPos            byte    $00, $00
-gPArray         byte    $80, $40, $20, $10, $08, $04, $02, $01
+pArray         byte    $80, $40, $20, $10, $08, $04, $02, $01
 xConst          byte    $3F, $01
 yConst          byte    $C7, $00
