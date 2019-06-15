@@ -75,7 +75,6 @@ CompareDXDY
         bne Exit
         lda dy
         bne Exit
-        jmp ReDelta
 ReDelta
         LIBGENERAL_CREATE_DELTA_A dx
         LIBGENERAL_CREATE_DELTA_A dy
