@@ -104,7 +104,7 @@ MultiplyXA
         MULTIPLY_BY_8_AVA pPos, xA, pPos
         LIBMATHS_ADD_16BIT_AVVA pPos, yB, #$00, pPos
         ldy xB
-        lda gPArray,y
+        lda pArray,y
         sta xC
         LIBGENERAL_COPY_WORD_AA pPos, zpLow
         ldy #$00
