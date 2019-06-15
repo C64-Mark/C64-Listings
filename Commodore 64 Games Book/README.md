@@ -11,8 +11,8 @@ Any suggestions for corrections/improvements/additions are welcomed.
 
 There is a folder for each game containing:
 
-The original BASIC file from the book
-My ASM file, along with any libraries, sprite binaries etc.
-A CBM PRG Studio file which will continue the BASIC file and all of the assembly files
-A PRG of the original BASIC version
-A PRG of my assembly version
+  The original BASIC file from the book
+  My ASM file, along with any libraries, sprite binaries etc.
+  A CBM PRG Studio file which will continue the BASIC file and all of the assembly files
+  A PRG of the original BASIC version
+  A PRG of my assembly version
