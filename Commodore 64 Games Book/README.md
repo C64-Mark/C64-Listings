@@ -15,4 +15,4 @@ The original BASIC file from the book
 My ASM file, along with any libraries, sprite binaries etc.
 A CBM PRG Studio file which will continue the BASIC file and all of the assembly files
 A PRG of the original BASIC version
-a PRG of my assembly version
+A PRG of my assembly version
